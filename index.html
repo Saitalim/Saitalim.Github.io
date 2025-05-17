@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>База продаж</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>База продаж</h1>
+
+  <form id="salesForm">
+    <input type="text" id="category" placeholder="Категория" required>
+    <input type="number" id="amount" placeholder="Сумма" required>
+    <button type="submit">Добавить</button>
+  </form>
+
+  <canvas id="salesChart" width="400" height="200"></canvas>
+
+  <table id="salesTable">
+    <thead>
+      <tr>
+        <th>Категория</th>
+        <th>Сумма</th>
+        <th>Действия</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <button id="exportBtn">📤 Скачать CSV</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
